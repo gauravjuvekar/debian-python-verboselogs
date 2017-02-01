@@ -1,4 +1,4 @@
-python-verboselogs (1.5-1) UNRELEASED; urgency=low
+python-verboselogs (1.5-1) experimental; urgency=low
 
   * Initial release (Closes: #853810)
 
