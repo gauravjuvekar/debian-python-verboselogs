@@ -3,3 +3,7 @@
 export PYBUILD_NAME=verboselogs
 %:
 	dh $@ --with python3,pypy,python2 --buildsystem=pybuild
+
+override_dh_auto_test:
+	# Do nothing as these tests (build) depend on python-coloredlogs, however
+	# coloredlogs depends on this package forming a circular dependency
