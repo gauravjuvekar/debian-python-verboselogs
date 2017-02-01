@@ -1,14 +1,16 @@
-Source: verboselogs
+Source: python-verboselogs
 Section: python
 Priority: optional
 Maintainer: Gaurav Juvekar <gauravjuvekar@gmail.com>
-Build-Depends: debhelper (>= 9), dh-python,
+Build-Depends: debhelper (>= 10), dh-python,
                pypy,
                pypy-setuptools,
                python-all,
                python-setuptools,
                python3-all,
                python3-setuptools,
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.2
 Standards-Version: 3.9.8
 Homepage: https://verboselogs.readthedocs.io
 
@@ -17,90 +19,39 @@ Architecture: all
 Depends: ${misc:Depends}, ${python:Depends},
 Recommends: ${python:Recommends}
 Suggests: ${python:Suggests}
-Description: Verbose logging level for Python's logging module - Python 2.X
- verboselogs: Verbose logging level for Python's logging module
- ==============================================================
+Description: Verbose logging level for the logging module in Python2
+ This package extends the logging module with the log levels VERBOSE, NOTICE,
+ and SPAM.
+ The VERBOSE level sits between the predefined INFO and DEBUG levels.
+ The NOTICE level sits between the predefined WARNING and INFO levels.
+ The SPAM level sits between the predefined DEBUG and NOTSET levels.
  .
-  .. image:: https://travis-ci.org/xolox/python-verboselogs.svg?branch=master
-    :target: https://travis-ci.org/xolox/python-verboselogs
- .
-  .. image:: https://coveralls.io/repos/xolox/python-verboselogs/badge.png?branch=master
-    :target: https://coveralls.io/r/xolox/python-verboselogs?branch=master
- .
- The verboselogs_ package extends Python's logging_ module to add the log levels
- VERBOSE_, NOTICE_, and SPAM_:
- .
- - The VERBOSE level sits between the predefined INFO and DEBUG levels.
- - The NOTICE level sits between the predefined WARNING and INFO levels.
- - The SPAM level sits between the predefined DEBUG and NOTSET levels.
- .
- The code to do this is simple and short, but I still don't want to copy/paste
- it to every project I'm working on, hence this package. It's currently tested
- on Python 2.6, 2.7, 3.4, 3.5 and PyPy.
- .
-  .. contents::
-    :local:
-    :depth: 2
- .
+ This package provides the library for Python2.
 
 Package: python3-verboselogs
 Architecture: all
 Depends: ${misc:Depends}, ${python3:Depends},
 Recommends: ${python3:Recommends}
 Suggests: ${python3:Suggests}
-Description: Verbose logging level for Python's logging module
- verboselogs: Verbose logging level for Python's logging module
- ==============================================================
+Description: Verbose logging level for the logging module in Python3
+ This package extends the logging module with the log levels VERBOSE, NOTICE,
+ and SPAM.
+ The VERBOSE level sits between the predefined INFO and DEBUG levels.
+ The NOTICE level sits between the predefined WARNING and INFO levels.
+ The SPAM level sits between the predefined DEBUG and NOTSET levels.
  .
-  .. image:: https://travis-ci.org/xolox/python-verboselogs.svg?branch=master
-    :target: https://travis-ci.org/xolox/python-verboselogs
- .
-  .. image:: https://coveralls.io/repos/xolox/python-verboselogs/badge.png?branch=master
-    :target: https://coveralls.io/r/xolox/python-verboselogs?branch=master
- .
- The verboselogs_ package extends Python's logging_ module to add the log levels
- VERBOSE_, NOTICE_, and SPAM_:
- .
- - The VERBOSE level sits between the predefined INFO and DEBUG levels.
- - The NOTICE level sits between the predefined WARNING and INFO levels.
- - The SPAM level sits between the predefined DEBUG and NOTSET levels.
- .
- The code to do this is simple and short, but I still don't want to copy/paste
- it to every project I'm working on, hence this package. It's currently tested
- on Python 2.6, 2.7, 3.4, 3.5 and PyPy.
- .
-  .. contents::
-    :local:
-    :depth: 2
- .
+ This package provides the library for Python3.
 
 Package: pypy-verboselogs
 Architecture: all
 Depends: ${misc:Depends}, ${pypy:Depends},
 Recommends: ${pypy:Recommends}
 Suggests: ${pypy:Suggests}
-Description: Verbose logging level for Python's logging module
- verboselogs: Verbose logging level for Python's logging module
- ==============================================================
+Description: Verbose logging level for the logging module in Python
+ This package extends the logging module with the log levels VERBOSE, NOTICE,
+ and SPAM.
+ The VERBOSE level sits between the predefined INFO and DEBUG levels.
+ The NOTICE level sits between the predefined WARNING and INFO levels.
+ The SPAM level sits between the predefined DEBUG and NOTSET levels.
  .
-  .. image:: https://travis-ci.org/xolox/python-verboselogs.svg?branch=master
-    :target: https://travis-ci.org/xolox/python-verboselogs
- .
-  .. image:: https://coveralls.io/repos/xolox/python-verboselogs/badge.png?branch=master
-    :target: https://coveralls.io/r/xolox/python-verboselogs?branch=master
- .
- The verboselogs_ package extends Python's logging_ module to add the log levels
- VERBOSE_, NOTICE_, and SPAM_:
- .
- - The VERBOSE level sits between the predefined INFO and DEBUG levels.
- - The NOTICE level sits between the predefined WARNING and INFO levels.
- - The SPAM level sits between the predefined DEBUG and NOTSET levels.
- .
- The code to do this is simple and short, but I still don't want to copy/paste
- it to every project I'm working on, hence this package. It's currently tested
- on Python 2.6, 2.7, 3.4, 3.5 and PyPy.
- .
-  .. contents::
-    :local:
-    :depth: 2
- .
+ This package provides the library for PyPy.
